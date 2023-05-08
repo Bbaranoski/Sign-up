@@ -55,14 +55,6 @@ body{
 
 }
 
-body:first-child{
-
-    width: 30vw + 400px;
-
-    height: 100%;
-
-}
-
 .odin{
 
     position:absolute;
@@ -106,7 +98,7 @@ body:first-child{
 
     color: white;
 
-    bottom: -5vh;
+    bottom: -10vh;
 
     left: 14vw;
 
@@ -114,7 +106,7 @@ body:first-child{
 
 img[alt="Plant"]{
 
-    height: max(110vh,600px);
+    height: max(100%,1000px);
 
     width: max(40vw,400px);
 
@@ -138,7 +130,7 @@ img[alt="Plant"]{
 
 .text{
 
-    height: max(40vh, 300px);
+    height: max(calc(40vh + 1em), 300px);
 
     display: flex;
 
@@ -153,7 +145,8 @@ img[alt="Plant"]{
     justify-content: center;
 
     gap: 2rem;
-    
+
+    background-color: rgb(247, 246, 246);
 
 }
 
@@ -161,4 +154,95 @@ img[alt="Plant"]{
 
     width: max(70%, 400px);
 
+}
+
+.forms{
+
+    height: max(calc(30vh + 1em),300px);
+
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+    font-family: sans-serif;
+
+}
+
+.container{
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.forms > div{
+
+    display: flex;
+
+}
+
+h1{
+
+    margin-left: 50px;
+
+    margin-top: 20px;
+
+    font-size: 1.7em;
+
+    font-weight: bold;
+
+}
+
+fieldset{
+
+    margin: 50px;
+
+}
+
+input{
+
+    margin-bottom: 20px;
+
+    font-family: sans-serif;
+
+    font-size: 0.8em;
+
+    width: max(13vw, 150px);
+
+    height: max(2.4vh, 1em);
+
+    padding-left: 0.5em;
+
+    border-radius: 5px;
+
+    border: solid 1px gray;
+
+}
+
+input:focus{
+
+    border: solid 1px rgb(0, 119, 255);
+
+    outline: none;
+
+    box-shadow: 2px 2px 3px rgb(68, 67, 67);
+
+}
+
+legend{
+
+    font-size: 0.8em;
+
+}
+
+.confirm{
+
+    height: max(calc(40vh + 1em), 300px);
+
+    background-color: rgb(247, 246, 246);
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+    
 }
