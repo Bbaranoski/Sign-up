@@ -47,9 +47,15 @@ table {
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
 }
 
-body :first-child{
+body{
 
-    width: 40%;
+    display: flex;
+
+}
+
+body:first-child{
+
+    width: 30vw + 400px;
 
     height: 100%;
 
@@ -71,7 +77,7 @@ body :first-child{
 
     align-items: center;
 
-    width: max(30vw,400px);
+    width: max(40vw,400px);
 
     height: max(20vh,100px);
 }
@@ -98,16 +104,36 @@ body :first-child{
 
     color: white;
 
-    bottom: 5vh;
+    bottom: -5vh;
 
-    left: 7vw;
+    left: 14vw;
 
 }
 
 img[alt="Plant"]{
 
-    height: max(100vh,600px);
+    height: max(110vh,600px);
 
-    width: max(30vw,400px);
+    width: max(40vw,400px);
+
+}
+
+.container{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.container :nth-child(odd){
+
+    height: 40vh;
+
+}
+
+.container :nth-child(even){
+
+    height: 30vh;
 
 }
