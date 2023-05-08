@@ -42,15 +42,20 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: odin-font;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
 body :first-child{
 
-    width: max(30%, 300px);
+    width: 40%;
 
     height: 100%;
 
 }
 
-.img-body{
+.odin{
 
     position:absolute;
 
@@ -60,7 +65,31 @@ body :first-child{
 
     color: white;
 
-    top: 0px;
+    top: 20%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: max(30vw,400px);
+
+}
+
+.odin img{
+
+    height: 15vh;
+
+    width: auto;
+
+}
+
+.odin span{
+
+    font-size: 8vh;
+
+    font-family: odin-font;
 
 }
 
@@ -68,8 +97,18 @@ body :first-child{
 
     position: absolute;
 
-    bottom: 5%;
+    color: white;
 
-    left: 5%;
+    bottom: 5vh;
+
+    left: 7vw;
+
+}
+
+img[alt="Plant"]{
+
+    height: max(100vh,600px);
+
+    width: max(30vw,400px);
 
 }
