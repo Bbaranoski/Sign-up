@@ -53,6 +53,8 @@ body{
 
     font-size: 16px;
 
+    height: 110vh;
+
 }
 
 .odin{
@@ -173,12 +175,6 @@ img[alt="Plant"]{
     height: 100%;
 }
 
-.forms > div{
-
-    display: flex;
-
-}
-
 h1{
 
     margin-left: 50px;
@@ -195,11 +191,15 @@ fieldset{
 
     margin: 50px;
 
+    margin-bottom: 3vh;
+
 }
 
 input{
 
     margin-bottom: 20px;
+
+    margin-right: 20px;
 
     font-family: sans-serif;
 
@@ -213,7 +213,7 @@ input{
 
     border-radius: 5px;
 
-    border: solid 1px gray;
+    border: solid 1px #E5E7EB;
 
 }
 
@@ -232,17 +232,64 @@ legend{
     font-size: 0.8em;
 
 }
-
 .confirm{
 
     height: max(calc(40vh + 1em), 300px);
 
     background-color: rgb(247, 246, 246);
 
-    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+button{
+
+    margin: 50px;
+
+    height: max(5vh, 50px);
+
+    width: max(12vw, 150px);
+
+    border-radius: 12px;
+
+    background-color: #596D48;
+
+    border-style: none;
+
+    color: white;
+
+    font-size: 1.3em;
+
+    font-family: sans-serif;
+
+    font-weight: bold;
+
+}
+
+.confirm > span{
+
+    font-size: 1.3em;
+
+}
+
+.confirm > a{
+
+    color: #596D48;
+
+}
+
+fieldset{
 
     display: flex;
 
     flex-direction: column;
-    
+
+    flex-wrap: wrap;
+
+    height: 190px;
+
+    width: max(40vw, 200px);
+
 }
