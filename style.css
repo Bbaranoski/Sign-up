@@ -59,9 +59,7 @@ body :first-child{
 
     position:absolute;
 
-    background-color: black;
-
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
 
     color: white;
 
@@ -75,11 +73,12 @@ body :first-child{
 
     width: max(30vw,400px);
 
+    height: max(20vh,100px);
 }
 
 .odin img{
 
-    height: 15vh;
+    height: max(15vh, 75px);
 
     width: auto;
 
@@ -87,9 +86,9 @@ body :first-child{
 
 .odin span{
 
-    font-size: 8vh;
+    font-size: max(10vh, 50px);
 
-    font-family: odin-font;
+    font-family: odin-font, sans-serif;
 
 }
 
