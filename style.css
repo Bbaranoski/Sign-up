@@ -108,7 +108,7 @@ body{
 
 img[alt="Plant"]{
 
-    height: max(100%,1000px);
+    height: max(calc(125vh + 1em),1000px);
 
     width: max(40vw,400px);
 
@@ -162,7 +162,7 @@ img[alt="Plant"]{
 
     height: max(calc(30vh + 1em),300px);
 
-    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(189, 187, 187);
 
     font-family: sans-serif;
 
@@ -234,7 +234,7 @@ legend{
 }
 .confirm{
 
-    height: max(calc(40vh + 1em), 300px);
+    height: max(calc(50vh + 1em), 400px);
 
     background-color: rgb(247, 246, 246);
 
@@ -272,9 +272,11 @@ button{
 
     font-size: 1.3em;
 
+    margin-left: 50px;
+
 }
 
-.confirm > a{
+#log{
 
     color: #596D48;
 
@@ -291,5 +293,11 @@ fieldset{
     height: 190px;
 
     width: max(40vw, 200px);
+
+}
+
+a:link, a:visited{
+
+    color: white;
 
 }
